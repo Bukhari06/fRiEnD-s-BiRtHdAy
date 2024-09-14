@@ -1,0 +1,92 @@
+/* General body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+    background-color: #080606;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styles */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+#friend-name {
+    color: #e2d6d5; /* Highlight color for friend's name */
+}
+
+/* Countdown timer styles */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Timer section styles */
+.timer-section {
+    background: #010911;
+    border: 2px solid #e9dfdf;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100px;
+    box-shadow: 0 4px 8px rgba(241, 95, 95, 0.1);
+}
+
+/* Time display styles */
+.time {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+}
+
+/* Label styles */
+.label {
+    display: block;
+    font-size: 1.2rem;
+    color: #fcf6f6;
+}
+
+
+h1 {
+    font-size: 2em;
+    color: orange;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) infinite, blink-caret .75s step-end infinite;
+    margin-top: 60px; /* Adjust margin to ensure text doesn't overlap the logo */
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #a17805; }
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 100%;
+    }
+  }
